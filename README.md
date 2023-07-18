@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
+![iphone](https://github.com/FabioFarinella96/Iphone-Calculator-Clone/assets/121029029/d292e560-9071-4bcb-80b6-0015c8ab7409)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
