@@ -8,7 +8,7 @@
   gap: 30px;
 
   .cardIphone {
-    width: 300px;
+    width: 270px;
     height: 250px;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
     }
 
     .link__iphone {
-      font-size: 2.5em;
+      font-size: 2.2em;
       line-height: 1.2;
       color: orange;
       text-decoration: none;
@@ -39,7 +39,7 @@
   }
 
   .cardConverter {
-    width: 300px;
+    width: 270px;
     height: 250px;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@
     position: relative;
 
     .link__converter {
-      font-size: 2.5em;
+      font-size: 2.2em;
       line-height: 1.2;
     }
 
@@ -73,5 +73,6 @@
   .header {
     display: flex;
     flex-direction: row;
+    gap: 50px;
   }
 }
