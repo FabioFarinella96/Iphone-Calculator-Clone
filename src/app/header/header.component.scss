@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  .cardIphone {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(36, 41, 46);
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+
+    .iphone-calc__image {
+      width: 120px;
+      position: absolute;
+      top: 20px;
+      right: 10px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.5s;
+    }
+
+    .link__iphone {
+      font-size: 2.5em;
+      line-height: 1.2;
+      color: orange;
+      text-decoration: none;
+    }
+  }
+
+  .cardConverter {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    color: orange;
+    background-color: rgb(36, 41, 46);
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+
+    .link__converter {
+      font-size: 2.5em;
+      line-height: 1.2;
+    }
+
+    .converter__image {
+      width: 120px;
+      position: absolute;
+      top: 20px;
+      right: 10px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.5s;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+}

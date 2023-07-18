@@ -1,0 +1,25 @@
+<section>
+  <a class="link" routerLink="/">Come back</a>
+  <h1>Currency Euro converter</h1>
+  <mat-form-field>
+    <mat-label class="label">Converter to</mat-label>
+    <mat-select>
+      <mat-option
+        appHighlight
+        *ngFor="let valuta of valute"
+        [value]="valuta.value"
+      >
+        {{ valuta.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <input
+    type="number"
+    placeholder="Insert value € "
+    (keyup)="onKeyUp($event)"
+  />
+
+  <div>
+    <p class="value">{{ inputValue }} {{ symbol }}</p>
+  </div>
+</section>

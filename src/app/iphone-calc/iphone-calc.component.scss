@@ -1,0 +1,145 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .link {
+    color: white;
+    margin: 10px auto;
+    text-decoration: none;
+  }
+
+  .display {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: flex-end;
+
+    .display__text {
+      font-size: 5em;
+      margin: 100px 30px 0 0;
+    }
+
+    .display__operation {
+      font-size: 4em;
+      margin: 100px 30px 0 0;
+      color: orange;
+    }
+  }
+
+  .first-calc__section,
+  .second-calc__section,
+  .third-calc__section,
+  .fourth-calc__section,
+  .fifth-calc__section {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .second-calc__section,
+  .third-calc__section,
+  .fourth-calc__section,
+  .fifth-calc__section {
+    .darkColor {
+      background-color: rgb(49, 49, 49);
+      color: white;
+
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .first-calc__section,
+  .second-calc__section,
+  .third-calc__section,
+  .fourth-calc__section,
+  .fifth-calc__section {
+    .orangeColor {
+      background-color: orange;
+      color: white;
+
+      &:active {
+        transform: scale(1.1);
+        background-color: white;
+      }
+    }
+  }
+
+  .fifth-calc__section {
+    .special-button {
+      width: 140px;
+      height: 75px;
+      display: flex;
+      color: white;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 45px;
+      border: 0;
+      font-size: 40px;
+      padding-left: 22px;
+    }
+  }
+
+  .button {
+    width: 75px;
+    height: 75px;
+    font-size: 35px;
+    display: flex;
+    background-color: rgb(160, 160, 160);
+    color: rgb(11, 11, 11);
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 100%;
+
+    &:active {
+      background-color: white;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .container {
+    width: 320px;
+    height: 550px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px auto;
+
+    .fifth-calc__section {
+      .special-button {
+        width: 110px;
+        height: 60px;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 45px;
+        border: 0;
+        font-size: 40px;
+        padding-left: 22px;
+      }
+    }
+
+    .display {
+      height: 30vh;
+
+      .display__text {
+        font-size: 5em;
+        margin: 110px 30px 0 0;
+      }
+    }
+
+    .button {
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+    }
+  }
+}

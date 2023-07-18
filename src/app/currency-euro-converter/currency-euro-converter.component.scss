@@ -1,0 +1,51 @@
+.link {
+  color: white;
+  margin: 10px auto;
+  text-decoration: none;
+}
+
+section {
+  width: 350px;
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 50px auto;
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .label {
+    color: black;
+  }
+
+  input {
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+  .value {
+    font-size: 25px;
+    margin-top: 20px;
+    color: green;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .section {
+    width: 400px;
+    height: 650px;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px auto;
+  }
+}

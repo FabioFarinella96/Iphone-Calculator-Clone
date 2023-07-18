@@ -1,0 +1,38 @@
+<section class="container">
+  <a class="link" routerLink="/">Come back</a>
+  <div class="display">
+    <h3 class="display__text">{{ displayNumber }}</h3>
+    <h2 *ngIf="operationType" class="display__operation">
+      {{ operationType }}
+    </h2>
+  </div>
+  <div class="first-calc__section">
+    <div class="button" (click)="operation('AC')">AC</div>
+    <div class="button">+/-</div>
+    <div class="button" (click)="operation('%')">%</div>
+    <div class="button orangeColor" (click)="operation('/')">/</div>
+  </div>
+  <div class="second-calc__section">
+    <div class="button darkColor" (click)="operation('7')">7</div>
+    <div class="button darkColor" (click)="operation('8')">8</div>
+    <div class="button darkColor" (click)="operation('9')">9</div>
+    <div class="button darkColor orangeColor" (click)="operation('X')">X</div>
+  </div>
+  <div class="third-calc__section">
+    <div class="button darkColor" (click)="operation('4')">4</div>
+    <div class="button darkColor" (click)="operation('5')">5</div>
+    <div class="button darkColor" (click)="operation('6')">6</div>
+    <div class="button orangeColor" (click)="operation('-')">-</div>
+  </div>
+  <div class="fourth-calc__section">
+    <div class="button darkColor" (click)="operation('1')">1</div>
+    <div class="button darkColor" (click)="operation('2')">2</div>
+    <div class="button darkColor" (click)="operation('3')">3</div>
+    <div class="button orangeColor" (click)="operation('+')">+</div>
+  </div>
+  <div class="fifth-calc__section">
+    <div class="special-button darkColor" (click)="operation('0')">0</div>
+    <div class="button darkColor" (click)="operation('.')">,</div>
+    <div class="button orangeColor" (click)="operation('=')">=</div>
+  </div>
+</section>
