@@ -49,6 +49,5 @@ export class IphoneCalcComponent {
       }
       this.operationType = '';
     }
-    console.log(this.displayNumber);
   }
 }

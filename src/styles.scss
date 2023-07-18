@@ -1,12 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  background: rgb(177, 122, 18);
+  background: radial-gradient(
+    circle,
+    rgba(177, 122, 18, 1) 0%,
+    rgba(0, 0, 0, 0.9220938375350141) 73%
+  );
   color: white;
   font-family: Helvetica;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
